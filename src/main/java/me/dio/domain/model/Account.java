@@ -21,11 +21,11 @@ public class Account {
 	
     private String agency;
     
-    @Column(precision = 2, scale = 13) 
-    //precisão de 2 algaritmos de depois da virgula. escala de 13 algaritmos no total
+    @Column(scale = 2, precision = 13) 
+    //escala de 2 algaritmos de depois da virgula. precisão de 13 algaritmos no total
     private BigDecimal balance;
     
-    @Column(name = "addictional_Limit",precision = 2, scale = 13) 
+    @Column(name = "addictional_Limit", scale = 2, precision = 13) 
     private BigDecimal limit;
 
     public Long getId() {return id;}
